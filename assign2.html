@@ -1,0 +1,59 @@
+<html>
+
+<head>
+	<title>Rock, Paper, Scissors!</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1><p id="p"> name </p></h1>
+	<div id="yourSelection"> </div>
+	<div id="ranSelection">  </div>
+	<script src="game.js"></script>
+	<table>
+		<tr>
+			<th>Your selection:</th>
+			<th> </th>
+			<th>Computer</th>
+		</tr>
+		<tr>
+			<td>
+				<form id="userForm">
+					<input type="radio" id="paper" name="choice" value="Paper">
+					<label for="paper">Paper</label><br>
+					<input type="radio" id="scissors" name="choice" value="Scissors">
+					<label for="scissors">Scissors</label><br>
+					<input type="radio" id="rock" name="choice" value="Rock">
+					<label for="rock">Rock</label><br>
+				</form>
+			</td>
+			<td>
+				<form>
+					<input type="button" value="Go!" onclick=generateCompChoice();>
+				</form>
+			</td>
+			<td>
+				<p id="output">	</p>
+			</td>
+		</tr>
+		<tr>
+			<td>You selected:</td>
+			<td colspan="2"> <p id="choice">  </p></td>
+		</tr>
+		<tr>
+			<td>Computer randomly generated: </td>
+			<td colspan="2">
+				<p id="output2"> </p>
+			</td>
+		</tr>
+	</table>
+	<p>
+	History: You have played total: <ins id="count">  </ins> time(s)!
+	<br>
+	Paper: <ins id="pCount"></ins> time(s) & Scissors: <ins id="sCount"></ins> times(s) & Rock: <ins id="rCount"></ins> time(s).
+	</p>
+	<p id="results"></p>
+
+</body>
+
+</html>
